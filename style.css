@@ -1,0 +1,255 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f8f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Header */
+  .header {
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header .logo img {
+   width: 100%;
+   height: 100%;
+  }
+  
+  .navbar a {
+    margin: 0 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #d81b60;
+  }
+  
+  .btn-primary {
+    background: #d81b60;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #b01750;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background: #f8f5f5;
+    text-align: justify;
+    text-align: center;
+    
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  .hero-image img,
+  .hero-image video {
+    
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 25rem;
+  }
+
+  .btn-secondary {
+    background: #d81b60;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background: #b01750;
+  }
+  
+  /* Masquer le bouton "toggle-menu" par défaut */
+.toggle-menu {
+  display: none;
+  background-color: #d81b60;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .hero-image img,
+  .hero-image video {
+    
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 15rem;
+  }
+  .navbar {
+    display: none; /* Masquer par défaut */
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.95); /* Fond semi-transparent */
+    position: fixed; /* Position au-dessus des autres éléments */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Prend toute la hauteur de l'écran */
+    z-index: 1000; /* Mettre la navbar au-dessus */
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar.active {
+    display: flex; /* Afficher le menu lorsqu'il est actif */
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333; /* Couleur du texte */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #d81b60; /* Couleur au survol */
+  }
+
+  /* Appliquer une transition fluide pour le menu */
+  .navbar {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  .navbar.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Ajuster le bouton toggle-menu */
+  .toggle-menu {
+    display: block;
+    position: fixed; /* Toujours visible sur mobile */
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100; /* Au-dessus de la navbar */
+    background-color: #d81b60;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .toggle-menu:hover {
+    background-color: #b01750; /* Couleur au survol */
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

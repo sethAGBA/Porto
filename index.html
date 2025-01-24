@@ -1,11 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Seth AGBA</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./services.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/téléchargement.png" alt="Logo Seth AGBA" />
+        </div>
+        <button class="toggle-menu" aria-label="Ouvrir le menu">☰</button>
+        <nav class="navbar">
+          <a href="#">Accueil</a>
+          <a href="#about">À Propos</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="hero-content">
+        <h2>Hello! je suis seth AGBA developpeur web & Mobile</h2>
+        <p>
+          Mon objectif est d'apporter des solutions technologiques fiables et
+          efficaces pour optimiser votre entreprise grâce aux innovations de
+          l'intelligence artificielle et du développement digital.
+        </p>
+        <a href="#about" class="btn-secondary">Voir Plus</a>
+      </div>
+      <div class="hero-image">
+        <img
+          src="./images/Développeur Freelance Flutter 🚀📱.jpeg"
+          alt="Person holding phone and coffee"
+        />
+        <!--  <video src="./images/petal_20250121_091510.mp4" controls loop="true"></video>-->
+      </div>
+    </main>
+
+    <section class="about" id="about">
+      <div class="container about__container">
+        <div class="about__content">
+          <h2>À propos de moi</h2>
+          <p>
+            Je suis Seth AGBA, développeur web et mobile passionné par la
+            création d'expériences numériques innovantes et performantes. Avec
+            une expertise en <strong>JavaScript, PHP, Python</strong> et des
+            frameworks modernes, je conçois des solutions sur mesure adaptées
+            aux besoins de mes clients.
+          </p>
+
+          <a href="#contact" class="btn btn-primary">Me Contacter</a>
+        </div>
+        <div class="about__image">
+          <img
+            src="./images/Kaspersky presenta sus el panorama de amenazas avanzadas 2024.jpeg"
+            alt="À propos de Seth AGBA"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container services__container">
+        <h2>Mes Services</h2>
+        <div class="services__grid">
+          <div class="service">
+            <img
+              src="./images/Formation Design & Développement WEB en Tunisie.jpeg"
+              alt="Développement Web"
+            />
+            <h3>Développement Web</h3>
+            <p>
+              Création de sites web modernes, rapides et responsives pour
+              répondre à vos besoins professionnels et personnels.
+            </p>
+          </div>
+          <div class="service">
+            <img
+              src="./images/Uber 2_png by Kashchishen Stanislav.jpeg"
+              alt="Développement Mobile"
+            />
+            <h3>Développement Mobile</h3>
+            <p>
+              Applications mobiles natives et hybrides optimisées pour Android
+              et iOS, adaptées à vos attentes.
+            </p>
+          </div>
+          <div class="service">
+            <img
+              src="./images/DAY 2  30 DAYS CAMPAIGN IN  LIVING IN THE IT ERA.jpeg"
+              alt="Solutions IA"
+            />
+            <h3>Solutions IA</h3>
+            <p>
+              Intégration de l'intelligence artificielle pour automatiser vos
+              processus et améliorer l'efficacité de votre entreprise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container container__container">
+        <aside class="contact__aside">
+          <div class="aside__image">
+            <img src="./svg/contact.svg" alt="contact seth agba" />
+          </div>
+          <h2>POUR TOUT CONTACT</h2>
+          <p>CLIQUER SR L'UNE DES ICÔNES CI DESSOUS</p>
+          <ul class="contact__details">
+            <li>
+              <img src="./svg/tel.svg" alt="Icône téléphone" />
+              <h5>+228 90 57 99 46</h5>
+            </li>
+            <li>
+              <a href="mailto:sethagbaa@gmail.com">
+                <img src="./svg/email.svg" alt="Icône email" />
+              </a>
+              <h5>sethagbaa@gmail.com</h5>
+            </li>
+            <li>
+              <img src="./svg/location.svg" alt="Icône localisation" />
+              <h5>Kara, Togo</h5>
+            </li>
+          </ul>
+          <ul class="content__socials">
+            <li>
+              <a href="#"
+                ><img src="./svg/twitter.svg" alt="Lien vers Twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=90579946"
+                target="_blank"
+              >
+                <img src="./svg/whatsapp.svg" alt="Lien vers WhatsApp" />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./svg/linkedin.svg" alt="Lien vers LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./svg/facebook.svg" alt="Lien vers Facebook"
+              /></a>
+            </li>
+          </ul>
+        </aside>
+        <form
+          action="https://formspree.io/f/xqkjklzg"
+          method="post"
+          class="contact__form"
+        >
+          <div class="form__name">
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Prénom"
+              required
+            />
+
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Nom"
+              required
+            />
+          </div>
+
+          <input
+            type="email"
+            name="emailAddress"
+            id="emailAddress"
+            placeholder="Votre adresse email"
+            required
+          />
+
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Votre message ici..."
+            required
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Envoyez</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 sethagba. All rights reserved.</p>
+    </footer>
+
+  <script src="./script.js"></script>
+  </body>
 </html>
